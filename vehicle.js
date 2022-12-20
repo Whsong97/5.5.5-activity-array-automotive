@@ -10,6 +10,19 @@ class Vehicle {
         this.started = false;
         this.numberOfWheels = 0;
     }
+    class Car extends Vehicle {
+        constructor(make, model, year, color, mileage)
+        super(Vehicle);
+        maximumPassengers = 5;
+        passenger = 0;
+        numberOfWheels = 4;
+        maximumSpeed = 160;
+        fuel = 10;
+        scheduleService = false;
+         }
+
+         let loadPassenger = prompt()
+
 
     start() {
         if (this.fuel > 0) {
@@ -76,7 +89,7 @@ class Vehicle {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
